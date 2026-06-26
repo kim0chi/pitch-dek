@@ -1,0 +1,6 @@
+sku_id,name,category,unit_price,unit_cost,mean_daily,dist
+SIO,Siomai (4pc),ready-to-eat,45,22.0,22,poisson
+COF,Hot coffee,ready-to-eat,30,12.0,28,normal
+RIC,Rice meal,ready-to-eat,65,35.0,8,poisson
+PAN,Pandesal (pc),bakery,4,2.4,40,normal
+LUM,Lumpia (pc),ready-to-eat,15,8.0,15,poisson
