@@ -1,0 +1,9 @@
+suki_id,name,on_time_rate,avg_days_late,defaults,times_borrowed,outstanding
+S01,Aling Rosa,0.98,1,0,24,150
+S02,Mang Tonio,0.9,3,0,18,400
+S03,Neneng,0.75,7,0,9,250
+S04,Kuya Boy,0.6,12,1,6,600
+S05,Inday,0.95,2,0,30,100
+S06,Mang Delfin,0.4,20,2,5,800
+S07,Ate Cora,0.85,4,0,12,300
+S08,Totoy,0.3,25,3,4,500

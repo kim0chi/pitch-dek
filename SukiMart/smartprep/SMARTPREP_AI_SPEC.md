@@ -4,7 +4,7 @@
 > **For the designer/Claude:** this is the AI section of the SukiMart pitch — **built, backtested, and code-reviewed**. Every number below is reproducible: `./.venv/bin/python SukiMart/smartprep/run.py`. This answers the finals' "role of AI" question (25 pts) and fixes our PopCart weakness ("is this really AI, or just an average?").
 
 ## What it is (one line)
-**Smart-Prep** is a feature inside Tina's POS that tells her each morning **exactly how much of each ready-to-eat item to cook** — sizing every item to its own economics so she stops wasting the highest-margin food.
+**SukiSense** is the predictive engine inside Tina's POS — it turns a cash register into a system that *forecasts*. Its first built module, **Smart-Prep**, tells her each morning **exactly how much of each ready-to-eat item to cook** — sizing every item to its own economics so she stops wasting the highest-margin food. *(Naming: SukiSense = the engine/vision; Smart-Prep = module 1, the part that's built and backtested today.)*
 
 ## Why ready-to-eat
 Per the case, ready-to-eat (siomai, coffee, rice meals) earns the best margin (45–55%) **and bleeds the most — 8–15% spoilage if demand is misjudged** (Exhibit F). That's the one place AI earns real pesos.
@@ -44,7 +44,7 @@ Smart-Prep is a dial, not a fixed point. Raising the service floor buys availabi
 On real POS data you only see what SOLD; on a sell-out, true demand is higher. In our validation, naive "sold" under-counts demand by **~17%** on sell-out days; **de-censoring recovers it to within ~1%** (from an imperfect sell-out-time signal). Smart-Prep cleans the data before forecasting, so it doesn't spiral down.
 
 ## The horizon — one engine, compounding (the outside-the-box layer)
-Smart-Prep's spoilage forecast is **the beachhead, not the ceiling.** The same forecast-then-optimize engine, fed by the POS data the store captures from Month 1, extends to the store's other quantified losses — each switching on as the data arrives, none needing a new system:
+Smart-Prep's spoilage forecast is **the beachhead, not the ceiling** — it's module 1 of **SukiSense**, the predictive engine in her POS. The same forecast-then-optimize engine, fed by the POS data the store captures from Month 1, extends to the store's other quantified losses — each switching on as the data arrives, none needing a new system:
 
 | Next use | The loss it attacks | Same-engine logic | Status |
 |---|---|---|---|
@@ -59,14 +59,15 @@ Smart-Prep's spoilage forecast is **the beachhead, not the ceiling.** The same f
 > ⚠️ Honesty: only the **spoilage** use is built and backtested today. The rest are designed extensions on the same engine — present them as the **roadmap**, not as done.
 
 ## The built artifact (show this — it's the credibility)
-- **Python prototype:** [`smartprep/`](.) — `run.py` (forecast + newsvendor + backtest + model comparison + censoring check), `forecast.py`, `newsvendor.py`, `distributions.py`, `events.py`, `censoring.py`, `lightgbm_model.py`, `reorder.py` (the 900 grocery SKUs), `app.py` (Streamlit), `html_report.py`, `charts.py`, `tests/` (**12 pass**). Architecture: [SMARTPREP_BUILD.md](SMARTPREP_BUILD.md).
+- **Python prototype — SukiSense engine + modules:** [`smartprep/`](.) — engine: `forecast.py`, `newsvendor.py`, `distributions.py`, `events.py`, `censoring.py`, `backtest.py`, `lightgbm_model.py`; modules: `run.py` (**Smart-Prep**, built), `reorder.py` (**Smart Reorder**), `utang.py` (**Utang Score**), `basket.py` (**Basket Lift**); `sukisense.py` (orchestrator/status board), `app.py` (Streamlit), `html_report.py`, `charts.py`, `tests/` (**18 pass**). Architecture: [SMARTPREP_BUILD.md](SMARTPREP_BUILD.md).
 - **Live demo spreadsheet:** [SukiMart_SmartPrep.xlsx](SukiMart_SmartPrep.xlsx) — same logic in Sheets (change a price, PREP recalculates via `NORM.S.INV`).
 - **Screenshots / charts for the slide:**
   - **Hero:** [screenshot_morning_dashboard.png](screenshot_morning_dashboard.png) — the Morning Prep Dashboard (real run output).
   - Charts in [../deck/](../deck/): `chart_spoilage.png` (16%→9%), `chart_uplift.png` (₱24k/₱47k), `chart_accuracy.png` (forecast vs actual).
   - Method panel: [screenshot_smartprep_panel.png](screenshot_smartprep_panel.png).
 
-## How to depict it in the deck (1 slide)
+## How to depict it in the deck (2 main slides + 4 appendix backups)
+> **Now split across two main slides** (see [SUKIMART_FINALS_DECK.md](../deck/SUKIMART_FINALS_DECK.md)): **Slide 9** = the method (the 2-step list + Morning Dashboard); **Slide 10** = the proof band + the horizon strip + the "deliberately NOT" line. The deeper material below is also built out as **4 appendix backup slides (AI-1…AI-4)** to flip to in Q&A. The single-slide layout below still works if you ever need to recombine them.
 - **Title:** THE STORE THAT LEARNS — STARTING WITH SPOILAGE
 - **Standfirst:** *Forecast each day's demand, then prep the profit-optimal amount per item — the first job of one engine that compounds.*
 - **Left:** the 2-step method (name **Holt-Winters**) + per-item insight (coffee kept stocked, cheap bread leaner).

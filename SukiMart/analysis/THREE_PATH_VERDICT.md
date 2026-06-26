@@ -15,6 +15,7 @@
 
 ## The single most important insight
 **Full-jump (base) run-rate ≈ ₱27,800/mo — barely above staged's ₱27,200 — yet it costs 9× the capital and a ₱750k loan.** The full jump only *meaningfully* wins in its **optimistic** case (₱128,000/mo). So the question isn't "which earns more?" — base case, staged and full jump are a tie. The question is **"is the optimistic case worth betting her ₱600k savings + a loan on, at a corner that is 'real but not a flood'?"** The honest answer is no — not until the data proves it.
+> *Consistency note (cash vs P&L): all run-rates here are **cash-basis** — the full-jump figure is after repaying ~₱12k/mo of loan principal. On a pure **P&L** basis (principal isn't an expense) the full-jump base reads ~**₱39,800/mo** vs staged's ₱27,200. We compare on cash because survival is a cash test and that's where the downside risk lives; the verdict turns on risk, not on the profit being equal.*
 
 ## Why not the full jump (stated defensibly)
 - Break-even is **₱612,000/mo (₱20,400/day, ~170 txns)** — a **3.4× jump** from today's ₱180k, with **6 rival sari-sari within 300m**.

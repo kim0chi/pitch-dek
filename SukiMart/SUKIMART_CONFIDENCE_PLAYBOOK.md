@@ -215,7 +215,7 @@ There are two ways to size the spoilage saving; **we deliberately pitch the cons
 > This is the section the judges said is worth real points and the section we lost on at PopCart. **It is built, backtested, and code-reviewed.** Reproduce any number with `./.venv/bin/python SukiMart/smartprep/run.py`.
 
 ### 7.1 What it is, in one line
-**Smart-Prep** is a feature inside Tina's POS that tells her each morning **exactly how many of each ready-to-eat item to cook** — sizing every item to its own economics so she stops wasting the highest-margin food.
+**SukiSense** is the predictive engine inside Tina's POS (it turns a cash register into a system that *forecasts*). Its first built module — **Smart-Prep** — tells her each morning **exactly how many of each ready-to-eat item to cook**, sizing every item to its own economics so she stops wasting the highest-margin food. *Naming: SukiSense = the engine; Smart-Prep = module 1 (built & backtested today).*
 
 ### 7.2 Why spoilage (why AI earns its place *here* and not everywhere)
 The case's Part 6 names six places AI could help. We picked the **one with a real, quantified loss and the data to learn from**: ready-to-eat earns the **best margin (45–55%)** *and bleeds the most* — **8–15% spoilage** if demand is misjudged (Exhibit F). *"Buzzwords score nothing"* — so we costed one use, proved the payback, and mapped the rest as a data-earned roadmap (§7.9). **That discipline is the answer.**
@@ -325,7 +325,7 @@ Daily sales & sell-out timing in the prototype are **illustrative samples** — 
 2. **What does Tina really earn?** → **₱9,800/mo** economic profit, not ₱25,800 (after a ₱16k fair wage).
 3. **What's the break-even?** → ₱147k fixed ÷ 24% = **₱612,500/mo ≈ ₱20,400/day ≈ 170 txns.**
 4. **How big a jump is that?** → **3.4×** today's ₱180k; **170 txns/day vs 96.**
-5. **Cash or P&L view?** → **Cash** for survival (₱147k); P&L would be ~₱135k. We're consistent on cash.
+5. **Cash or P&L view?** → **Cash, consistently** — break-even (₱147k → ₱612k) *and* every path's run-rate deduct the full ₱22k loan. P&L break-even would be ~₱135k. (On a P&L *profit* basis the full jump looks better — see curveball #32.)
 6. **Where did ₱147k come from?** → Exhibit D: rent 28 + elec 22 + staff 39 + salary 18 + loan 22 + POS 4 + permits 2.5 + maint 6 + mktg 3.5 + insurance 2.
 7. **What's the loan cost?** → ₱750k @18%/48mo ≈ **₱22k/mo** (~₱10k interest + ₱12k principal).
 8. **Why 24% margin, not today's 17.5%?** → Mix shift to ready-to-eat (45–55%) + services (near-pure) lifts the blend; 24% is the conservative convenience benchmark (Exhibit F), not today's sari-sari mix.
@@ -347,7 +347,8 @@ Daily sales & sell-out timing in the prototype are **illustrative samples** — 
 20. **Why does your in-stock drop to 53%?** → That's the *profit-max* setting, deliberately on cheap items where over-cooking wastes more than a rare miss. It's a **dial** — match today's ~79% availability and it still cuts waste and adds profit.
 21. **Why only ₱24k when your model shows more?** → Our top-down ceiling is ~₱67k/yr, but we cite the **backtested, net ₱24k** — net of sales given up and valued at cost. We under-promise.
 22. **Is AI overkill for a sari-sari?** → The forecasting runs in a **spreadsheet** in milliseconds and Tina reads one number per item. It's affordable and explainable — that's the point.
-23. **Why only spoilage — is that all AI can do here?** → Spoilage is where AI pays *today*. It's **one engine**: it extends to reorder across 900 SKUs, utang scoring, basket lift, and staffing-to-traffic — exactly the openings the case lists — switching on as the data arrives.
+23. **Why only spoilage — is that all AI can do here?** → Spoilage is where AI pays *today*. It's **one engine — we call it SukiSense**; Smart-Prep is its first module. The same engine extends to reorder across 900 SKUs, utang scoring, basket lift, and staffing-to-traffic — exactly the openings the case lists — switching on as the data arrives.
+24. **What's SukiSense vs Smart-Prep?** → SukiSense is the **predictive engine** in the POS; Smart-Prep is its **first built module** (spoilage). One engine, many modules — we built and backtested module 1, and the rest run on the same brain as data arrives.
 24. **Can Tina actually run it?** → The system recommends; **Tina decides.** She reads the morning list; the engine is built once by a dev and runs nightly.
 25. **What did you choose NOT to build, and why?** → Surge-pricing and customer surveillance — they'd erode the suki trust that is her real asset.
 26. **How does the AI handle a sell-out?** → It flags it and de-censors (true demand ≥ sold); otherwise the forecast would spiral down. Naive data under-counts by ~17%; we recover to ~1%.
@@ -358,6 +359,7 @@ Daily sales & sell-out timing in the prototype are **illustrative samples** — 
 29. **Isn't ₱9,800 unfair — she's happy with ₱25,800 cash?** → For her *household* cash flow, ₱25,800 is real. But to compare against SukiMart (which pays her a salary), we must value her labor — otherwise we'd compare a job-plus-business to a business and mislead her.
 30. **What's your confidence in the 3.4× being reachable?** → Honestly: base case yes, downside no — which is *precisely* why we refuse to bet the loan on it and instead measure it first.
 31. **If you had to cut one thing from the plan, what?** → The chillers (M6–8) before services/ready-to-eat — services draw traffic and ready-to-eat carries the margin + the AI story; chillers are the most deferrable.
+32. **"Your 'same profit' claim only holds on a cash basis — on a P&L the full jump earns more."** → Honest answer: **yes.** On a pure P&L the full-jump base earns ~**₱39,800/mo** (loan principal builds equity, it isn't an expense) vs staged's **₱27,200**. But she must still find that **₱12,000 of principal in cash every month** — and in the downside she can't; that's the ₱389k gap. The case tells us to lead with cash because *a store survives on cash.* And our verdict doesn't rest on the profit being equal — it rests on the **risk**: a near-equal cash run-rate at a fraction of the capital and **zero debt.** We capture the P&L upside in **Year 2, from proof.**
 
 **If you genuinely don't know:** *"I don't have that exact figure in front of me — here's how we'd calculate it: …"* Then give the method. Never invent a number.
 
@@ -382,7 +384,7 @@ Daily sales & sell-out timing in the prototype are **illustrative samples** — 
 4. *"Smart-Prep isn't the AI; it's the first thing the AI does."*
 5. *"No prize for the most ambitious option — a prize for being right."*
 
-**The AI in one breath:** *Holt-Winters forecast + newsvendor optimizer → cook the profit-optimal amount per item → spoilage 16%→9%, ~₱24k/yr, ₱0 cost, backtested (it beat LightGBM). One engine that compounds into reorder, utang, and baskets.*
+**The AI in one breath:** *SukiSense — the predictive engine in her POS. Module 1, Smart-Prep: Holt-Winters forecast + newsvendor optimizer → cook the profit-optimal amount per item → spoilage 16%→9%, ~₱24k/yr, ₱0 cost, backtested (it beat LightGBM). Same engine compounds into reorder, utang, and baskets.*
 
 **Pitch flow:** Illusion (₱9,800) → Trap (markup≠profit, ₱147k) → Mountain (₱612k, 3.4×) → Corner (real but not a flood) → 3 Paths (same profit, different risk) → Verdict (earn the loan) → Store builds itself → **AI/Smart-Prep** → The money → 12-month plan + gate → Risks → Close.
 
@@ -399,7 +401,7 @@ Daily sales & sell-out timing in the prototype are **illustrative samples** — 
 # The AI system (forecast + newsvendor + backtest + model comparison + censoring)
 ./.venv/bin/python SukiMart/smartprep/run.py
 
-# The tests (12 pass)
+# The tests (18 pass — engine math + each module)
 ./.venv/bin/pytest SukiMart/smartprep/tests/ -q
 ```
 **Source docs:** business concepts → `analysis/BUSINESS_CRASHCOURSE.md` · the verdict → `analysis/THREE_PATH_VERDICT.md` · AI pitch handoff → `smartprep/SMARTPREP_AI_SPEC.md` · AI engineering → `smartprep/SMARTPREP_BUILD.md` · the deck → `deck/SUKIMART_FINALS_DECK.md`.

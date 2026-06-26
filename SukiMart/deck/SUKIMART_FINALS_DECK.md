@@ -33,6 +33,21 @@ Draw **Tina's storefront once**, in a warm flat-illustration style, and **evolve
 
 Use F0→F3 as the visual through-line: on the verdict and roadmap slides, show the **four frames in a row** as a growth strip. On the close, the dotted SukiMart facade becomes solid — *earned.*
 
+## ★ THE SUKISENSE WORDMARK (for the AI slides — render it consistently)
+SukiSense is the **intelligence layer**, so its mark is a **flat, clean software wordmark** — a deliberate contrast to the 3D storefront miniatures (*storefront = the shop; flat mark = the brain/software*). **No robots, no circuit boards, no chrome, no blue tech-gradients** — stay in the warm palette.
+
+- **Wordmark:** one word, camelCase **"SukiSense"** in the headline humanist sans (Poppins/Inter), semibold. Two-tone: **"Suki"** in charcoal `#1F2421`, **"Sense"** in fresh green `#2E8B57`. Never split into two words.
+- **The "spark" (the only embellishment):** a single **gold `#E8A33D` dot** used as a *forecast point* — it replaces the tittle over the **i** in "Sense" (or sits as a small leading dot just ahead of a tiny rising line). It means *"the predicted next point."*
+- **Engine badge (for Slide 10's centre):** a rounded-square in green `#2E8B57` holding a **white forecast curve with the gold dot leading just ahead of it** (a rising line; the dot anticipates where it goes next). This badge is the "engine" the modules radiate from.
+- **Tagline (optional, small, grey `#8A8079`):** *the store that learns* · or *predictive POS engine.*
+
+**Where it appears:**
+- **Slide 9 — kicker, top-left:** the `SukiSense` wordmark + a small `· Module 1: Smart-Prep` tag.
+- **Slide 10 — centre:** the green **engine badge** labelled **SukiSense**, with **Smart-Prep / Spoilage** as a solid lit node and **Reorder · Utang · Baskets** as dotted nodes.
+- **Appendix AI-1…AI-4 — top corner:** the small `SukiSense` wordmark as a section marker.
+
+**Do / Don't:** ✅ flat vector · warm palette · one gold forecast-dot · legible to ~16px.  ❌ no robot / brain-with-circuits / chip imagery · no neon or blue gradients · no 3D render (reserved for the storefront) · don't recolour the whole word green (keep "Suki" charcoal so it ties to the body ink).
+
 ## ★ THE NUMBERS THAT MUST BE RIGHT (reconciled)
 Real profit today **₱9,800/mo** (not ₱25,800) · SukiMart fixed nut **₱147,000/mo** · break-even **₱612,000/mo ≈ ₱20,400/day ≈ 170 txns** (vs **96 today**) · Staged run-rate **₱27,200/mo**, Yr-1 cash **₱276k**, capex **₱150k, no loan** · Full-jump base **₱27,800/mo** but needs **₱1.35M + ₱750k loan**, downside needs **~₱389k extra liquidity** · AI spoilage savings **~₱24k/yr (staged) → ~₱47k/yr (full)**.
 
@@ -53,7 +68,7 @@ Real profit today **₱9,800/mo** (not ₱25,800) · SukiMart fixed nut **₱147
 **On-slide (4 rows):**
 - **Verdict:** **Stage the transition.** Grow the store one self-funding step at a time; don't take the ₱750k loan yet.
 - **Break-even reality:** the full store needs **₱612,000/mo (3.4× today)** to survive — a real stretch at this corner.
-- **Role of AI:** a **demand-forecasting engine** — starts with **spoilage** (saves **~₱24k–47k/yr**, **₱0 extra** — it's in the POS already), built to grow into **reorder, utang & baskets** as the data deepens.
+- **Role of AI:** **SukiSense** — a **predictive engine** in her POS. Its first built module, **Smart-Prep**, forecasts **spoilage** (saves **~₱24k–47k/yr**, **₱0 extra**); the same engine grows into **reorder, utang & baskets**.
 - **The plan:** 12 months of upgrades, a **Month-9 decision gate**, loan only *after* the data proves it.
 🎨 **Illustration:** the four-frame storefront growth strip (F0→F3) along the bottom.
 🎤 **Speaker (0:25–1:05) ║ P1:** *"Our answer in one line: don't bet the farm — earn the store. We do NOT recommend borrowing ₱750,000 to build the full SukiMart today. We recommend growing it in stages, each paying for itself, while AI kills the one cost that sinks convenience stores. By month nine, the data tells Tina whether the big loan is safe. Let me show you why."*
@@ -114,53 +129,64 @@ Callout: *Full jump only really wins in its best case (₱128k/mo) — that's th
 - **Ready-to-eat** — coffee + siomai (**45–55% margin**)
 - **Chillers** — cold drinks (18–22%), shift the mix off thin cigarettes (9%)
 🎨 **Illustration:** the storefront with each add-on appearing (counter → chiller → services sign), arrows showing each funding the next.
-🎤 **Speaker (4:50–5:25) ║ P4:** *"Here's how the store grows itself. First, services — bills payment, e-wallet, padala. Almost pure profit, and they pull people through the door every day. Those earnings fund the next step: a coffee and siomai counter at 45 to 55 percent margin. That funds a chiller for cold drinks. Each piece pays for the next, so Tina never bets money she hasn't earned — and her ₱180,000 store grows toward ₱320,000 a month, with no loan."*
+🎤 **Speaker (4:50–5:18) ║ P4:** *"Here's how the store grows itself. First, services — bills payment, e-wallet, padala. Almost pure profit, and they pull people through the door every day. Those earnings fund the next step: a coffee and siomai counter at 45 to 55 percent margin. That funds a chiller for cold drinks. Each piece pays for the next, so Tina never bets money she hasn't earned — and her ₱180,000 store grows toward ₱320,000 a month, with no loan."*
 
-## SLIDE 9 · THE ROLE OF AI — Smart-Prep (BUILT — see [SMARTPREP_AI_SPEC.md](../smartprep/SMARTPREP_AI_SPEC.md))
+## SLIDE 9 · THE ROLE OF AI (1 of 2) — THE METHOD  (Smart-Prep, BUILT — see [SMARTPREP_AI_SPEC.md](../smartprep/SMARTPREP_AI_SPEC.md))
+**Kicker (small, above title):** SukiSense · the predictive engine in her POS — **Module 1**
 **Title:** THE STORE THAT LEARNS — STARTING WITH SPOILAGE
-**Standfirst:** *Smart-Prep forecasts each day's ready-to-eat demand, then preps the profit-optimal amount — the first job of one engine that compounds.*
+**Standfirst:** *Smart-Prep — SukiSense's first module — tells Tina each morning exactly how much ready-to-eat to cook, per item.*
 **On-slide (left = the 2-step method):**
 - **① Forecast** — **Holt-Winters** *learns* each weekday & payday rhythm from the POS history (Exhibit G). It adapts as patterns change — not a fixed multiplier.
 - **② Optimize (newsvendor model)** — prep where the cost of spoiling one unit = the cost of missing one sale. `PREP = forecast + z × swing` (z is the per-item critical ratio — margin-driven).
 - **The smart part:** it preps **MORE** high-margin coffee, **LESS** cheap-to-waste pandesal — a costed decision *per item*, not one average.
-**On-slide (right = the real tool):** the **Morning Dashboard screenshot** — *5 items · ₱1,983 saved/mo · spoilage 16%→9%.*
-**On-slide (proof band):** *Backtested: WAPE ~19% · spoilage 16% → 9% · payday-Holt-Winters beats LightGBM (18% vs 20%) · de-censoring recovers demand to ~1%.*
-**On-slide (bottom band):** Protects **~₱24,000/yr (staged) → ~₱47,000/yr (full SukiMart)** · **₱0 incremental cost** (a feature of the POS already in the plan, Exhibit D) · *recommends; Tina decides.*
-**On-slide (HORIZON strip — "same engine, as data earns it"):** Today: **spoilage** (built). Next, as the POS fills with data → **Smart Reorder** across 900 grocery SKUs (frees cash off the shelf, kills stock-outs) · **Utang scoring** (who's safe to extend credit, how much) · **Basket lift** (cross-sell to push AOV ₱62 → toward the ₱120 break-even needs). *One engine — fed, not rebuilt. AI matures with the store.*
-**On-slide (deliberately NOT doing — the judgment line):** no payday **surge-pricing**, no camera **surveillance** — they'd cost Tina the *suki* trust that IS the business. *We chose where AI belongs, and where it doesn't.*
-🎨 **Illustration:** the F1 storefront's ready-to-eat counter with a phone/POS showing **"Cook 33 coffees today, not 34"**; beside it drop in **[screenshot_morning_dashboard.png](../smartprep/screenshot_morning_dashboard.png)** (hero) and, smaller, **[screenshot_smartprep_panel.png](../smartprep/screenshot_smartprep_panel.png)** (proof). *This is a real, working file — [SukiMart_SmartPrep.xlsx](../smartprep/SukiMart_SmartPrep.xlsx).*
-🎤 **Speaker (5:25–6:25) ║ P4:** *"Every morning for thirteen years, Tina has asked the same question — **how much do I cook today?** Cook too little, she turns customers away. Cook too much, she throws out the most expensive food in the store. By gut, there's no good answer. With data, there's a perfect one. So we built **Smart-Prep** — and it's real, it runs. It reads tomorrow — a Tuesday, payday, the rhythm the store already knows — and gives her one number: **cook thirty-three coffees, not thirty-four.** And here's the clever part: it preps a little **more** coffee, because a missed coffee is fifty-percent margin gone — and a little **less** pandesal, because day-old bread is cheap to lose. A costed decision for **every item**, not one average. The textbook method for perishables, running on her POS. Spoilage drops from sixteen percent to nine — about ₱24,000 a year, at zero extra cost. (beat) But I don't want you to think Smart-Prep IS the AI — it's the **first thing** the AI does. The same engine that sizes a siomai tray can size her orders across **nine hundred products**, score who's safe for **utang**, and learn which products sell **together** to lift every basket — each one switching on as the data arrives. We didn't sprinkle 'AI' to sound clever; we put it where it pays **today**, and built it to **compound**. Tina earns the store with data — and that data earns the intelligence. The system recommends; **Tina decides.**"*
-> **Timing note:** this beat is ~60–65s (vs the old 35s). The horizon reframe is the last ~15s — if you're tight on the 7:00, the slack is on Slide 13 (Expected Impact), whose script already rolls into the close. Trim the "(beat) But I don't want you to think…" sentence to *"And Smart-Prep is just the first thing it does — the same engine grows into reorder, utang and baskets as the data arrives"* to recover ~10s.
+**On-slide (right = the real tool):** the **Morning Dashboard screenshot** — *5 items · "Cook 33 coffees, not 34" · ₱1,983 saved/mo.*
+**On-slide (bottom band):** *The highest-margin shelf, protected — sized to each item's own economics. **System recommends; Tina decides.***
+🎨 **Illustration:** the F1 storefront's ready-to-eat counter with a phone/POS showing **"Cook 33 coffees today, not 34"**; the **[screenshot_morning_dashboard.png](../smartprep/screenshot_morning_dashboard.png)** as hero. *Real, working file — [SukiMart_SmartPrep.xlsx](../smartprep/SukiMart_SmartPrep.xlsx).*
+🎤 **Speaker (5:18–5:58) ║ P4:** *"Every morning for thirteen years, Tina has asked the same question — **how much do I cook today?** Cook too little, she turns customers away. Cook too much, she throws out the most expensive food in the store. By gut, there's no good answer; with data, there's a perfect one. So we built **Smart-Prep** — and it's real, it runs. It reads tomorrow — a Tuesday, payday, the rhythm the store already knows — and gives her one number: **cook thirty-three coffees, not thirty-four.** And the clever part: a little **more** coffee, because a missed sale is fifty-percent margin gone — a little **less** pandesal, because day-old bread is cheap to lose. A costed decision for **every item**, not one average."*
 
-## SLIDE 10 · THE MONEY, HONESTLY
+## SLIDE 10 · THE ROLE OF AI (2 of 2) — THE PROOF & THE HORIZON
+**Title:** WE BUILT IT — AND IT COMPOUNDS
+**Standfirst:** *Not a buzzword: backtested today, and built to grow with the store.*
+**On-slide (proof band — hero numbers):** **WAPE ~19%** · spoilage **16% → 9%** · protects **~₱24k → ~₱47k/yr** · **₱0 incremental cost.**
+**On-slide (the 3 honesty proofs):**
+- **We tested ML** — LightGBM 20% vs Holt-Winters 18%. It lost; *we said so.*
+- **We handle sell-outs** — true demand hides when an item sells out; we correct it (naive −17% → ~1%).
+- **It's a dial** — Tina can trade availability for profit; profit-optimal by default.
+**On-slide (HORIZON strip — the SukiSense engine):** **SukiSense** is the predictive engine; module 1 **Smart-Prep** (spoilage) is **built**. Same engine, next → **Smart Reorder** (900 SKUs) · **Utang Score** · **Basket Lift** — *the exact openings the case names (Part 6), switching on as data arrives.*
+**On-slide (judgment line):** *Deliberately NOT: payday **surge-pricing** · camera **surveillance** — they'd cost the suki trust that IS the business.*
+🎨 **Illustration:** a central **engine labelled "SukiSense"** feeding four outputs — **Smart-Prep / Spoilage** lit & solid (done); **Reorder · Utang · Baskets** dotted ("coming as data arrives"). Warm theme, tied to the storefront; the proof numbers as a band beneath.
+🎤 **Speaker (5:58–6:33) ║ P4:** *"And we didn't just design it — we **proved** it. Backtested, our forecast is about eighty percent accurate, and it cuts spoilage from sixteen to nine percent — protecting around **₱24,000 a year, at zero extra cost.** We even tested a fancy machine-learning model; it **lost** to the simpler one, and we said so. (beat) But here's the bigger idea: Smart-Prep is just the **first module** of an engine we call **SukiSense**. The same engine that sizes a siomai tray will size her orders across **nine hundred products**, score who's safe for **utang**, and lift every **basket** — switching on as the data arrives. Tina earns the store with data, and that same data earns the intelligence. The system recommends; **Tina decides.**"*
+> **Timing note (back half is tight at 7:00):** the two AI beats run ~75s total (was ~60s). Recover ~15s by tightening **Slide 11 (Money)** to ~15s — it overlaps **Slide 14 (Expected Impact)**, already a glance rolled into the close. Suggested back half: How-it-works 4:50–5:18 · AI-method 5:18–5:58 · AI-proof 5:58–6:33 · Money 6:33–6:48 · Roadmap 6:48–6:58 · Risks (one line) · Close to 7:00.
+
+## SLIDE 11 · THE MONEY, HONESTLY
 **Title:** THE MONEY, WITHOUT PRETENDING
 **Standfirst:** *Staged ~triples her real profit — and we show what it costs.*
 **On-slide:** Real profit **₱9,800 → ₱27,200/mo** (Mo-12 run-rate). Capex **₱150k from savings, no loan**, **₱450k savings kept.** Honest line: *Year-1 cash is ~₱77k lower than playing safe — we reinvest it into the ramp.*
 🎨 **Illustration:** a simple rising bar ₱9.8k → ₱27.2k, with a small "(−₱77k yr-1 cash, on purpose)" footnote tag.
-🎤 **Speaker (6:00–6:25) ║ P2:** *"The money, honestly. Staging nearly triples Tina's real profit — from ₱9,800 to about ₱27,200 a month — for ₱150,000 of her own cash, no loan, and ₱450,000 of savings still in the bank. The trade-off we'll own: she earns about ₱77,000 less in the first year because she's reinvesting into the upgrades. We think a stronger, safer engine is worth one year of patience."*
+🎤 **Speaker (6:33–6:48) ║ P2:** *"The money, honestly. Staging nearly triples Tina's real profit — from ₱9,800 to about ₱27,200 a month — for ₱150,000 of her own cash, no loan, and ₱450,000 of savings still in the bank. The trade-off we'll own: she earns about ₱77,000 less in the first year because she's reinvesting into the upgrades. We think a stronger, safer engine is worth one year of patience."*
 
-## SLIDE 11 · THE 12-MONTH PLAN — with a gate
+## SLIDE 12 · THE 12-MONTH PLAN — with a gate
 **Title:** TWELVE MONTHS, ONE DECISION GATE
 **Standfirst:** *Build the habit, then test the jump — and don't borrow until the data says go.*
 **On-slide (timeline):** M1–2 books on a POS · M3–5 services + ready-to-eat (AI on) · M6–8 chillers + mix shift · **M9 ★ GATE: does the data show a path to ₱612k/mo? go / refine / hold** · M10–12 *prepare* the loan + full-build plan for Year 2 (the ₱750k loan is **not drawn this year**).
 🎨 **Illustration:** the storefront growth strip laid along a 12-month timeline, with a bright gate diamond at M9 and the dotted SukiMart at the end.
-🎤 **Speaker (6:25–6:50) ║ P3:** *"The plan is twelve months in three phases — get her on a simple POS to end the notebook, add the services and food, then the chillers. The key is Month 9: a hard decision gate. If the data shows the corner can hit ₱612,000 a month, she prepares the loan and builds the full SukiMart in Year 2. If it doesn't, she keeps a ₱27,000-a-month store with her savings intact. Either way, she wins. We never draw the loan on hope."*
+🎤 **Speaker (6:48–6:58) ║ P3:** *"The plan is twelve months in three phases — get her on a simple POS to end the notebook, add the services and food, then the chillers. The key is Month 9: a hard decision gate. If the data shows the corner can hit ₱612,000 a month, she prepares the loan and builds the full SukiMart in Year 2. If it doesn't, she keeps a ₱27,000-a-month store with her savings intact. Either way, she wins. We never draw the loan on hope."*
 
-## SLIDE 12 · RISKS & STOP-RULES
+## SLIDE 13 · RISKS & STOP-RULES
 **Title:** WE TRIED TO BREAK OUR OWN PLAN
 **Standfirst:** *Every risk has a mitigation AND a pre-agreed line to stop.*
 **On-slide (3 rows):** Spoilage → AI forecast + start small · Demand falls short → the M9 gate stops the loan · Owner overload → POS + one trained helper before scope grows. *Stop-rule: if economics turn negative, cut scope — don't borrow to chase it.*
 🎨 **Illustration:** small "guardrail" motif around the storefront growth strip.
-🎤 **Speaker (6:50–7:00) ║ P3:** *"We stress-tested it. Spoilage — the AI handles it. Weak demand — the gate stops the loan before it's taken. Owner burnout — POS and one trained helper before the store grows. Every risk has a line where we stop, not double down."*
+🎤 **Speaker (6:58–7:00) ║ P3:** *"We stress-tested it. Spoilage — the AI handles it. Weak demand — the gate stops the loan before it's taken. Owner burnout — POS and one trained helper before the store grows. Every risk has a line where we stop, not double down."*
 
-## SLIDE 13 · EXPECTED IMPACT
+## SLIDE 14 · EXPECTED IMPACT
 **Title:** WHAT CHANGES IN 12 MONTHS
 **Standfirst:** *More profit, real records, a proven path — and savings intact.*
 **On-slide (before→after):** real profit ₱9.8k → **₱27.2k/mo** · records: notebook → **live POS data** · perishable spoilage **16% → 9%** · savings: **₱450k kept** · the big loan: **decided on proof, not hope.**
 🎨 **Illustration:** F0 → F2 storefront, brighter and busier; the dotted F3 SukiMart now within reach.
 🎤 **Speaker:** *(rolled into the close)*
 
-## SLIDE 14 · CLOSE
+## SLIDE 15 · CLOSE
 **Title:** EARN THE RIGHT TO GROW
 **Standfirst:** *Tina doesn't need to gamble her savings to grow. She needs to earn the store — one proven step at a time.*
 **On-slide:** the line + `Team SiXeven`.
@@ -174,8 +200,66 @@ Callout: *Full jump only really wins in its best case (₱128k/mo) — that's th
 - **B · The model** — screenshot/printout of [sukimart_three_paths.py](../analysis/sukimart_three_paths.py) output (the three-path table + break-even).
 - **C · Assumptions & sources** — AOV/break-even from Exhibit A–D; convenience margins Exhibit F; hourly pattern Exhibit G; staged margins build to ~21% via mix; AI spoilage 16%→9%; contribution/economic-profit definitions; loan ₱750k @18%/48mo ≈ ₱22k/mo.
 
+---
+
+## APPENDIX · SMART-PREP BACKUP SLIDES (not counted — flip to these in Q&A)
+> **Purpose:** these four are the depth *behind* Slides 9–10 — the **SukiSense** engine (Smart-Prep + its roadmap). Do **not** show them in the 7-minute flow — keep AI to one beat on the main stage. When a judge asks about the AI, open the matching slide. This is where the 25-pt "role of AI" question is actually won. Full source: [SMARTPREP_AI_SPEC.md](../smartprep/SMARTPREP_AI_SPEC.md) · [SMARTPREP_BUILD.md](../smartprep/SMARTPREP_BUILD.md). Lay these out to **match the deck's warm theme**; they can be denser than main slides (judges study them).
+
+### AI-1 · HOW THE FORECAST WORKS  *(flip here for "what model is it / is this really AI?")*
+**Title:** SMART-PREP — THE METHOD, IN FULL
+**On-slide (a 3-step pipeline, left→right):**
+- **① FORECAST** — payday-aware **Holt-Winters** (level + trend + **weekly seasonality, period 7**); falls back to a **seasonal baseline** on < 3–4 weeks of data; **auto-selected per SKU** by lowest hold-out error.
+- **② RANGE** — demand *distribution* per item: **Normal** for high-volume (coffee, pandesal), **Poisson / Negative-Binomial** for low counts (rice, siomai) — chosen from each SKU's own dispersion.
+- **③ DECIDE** — the **newsvendor model**: `PREP Q* = F⁻¹(CR)`, `CR = Cu / (Cu + Co)`. *Worked:* coffee μ≈32, CR = 18/(18+12) = 0.60 → **cook 33, not 34.**
+**On-slide (per-item critical ratios):** Coffee **0.60 → cook MORE** · Siomai 0.51 · Lumpia 0.47 · Rice 0.46 · Pandesal **0.40 → cook LESS.**
+**Footer:** *Standard operations-research methods — explainable, runs in milliseconds, not a black box.*
+🎤 **Pocket answer:** *"Holt-Winters forecast → a demand distribution → the newsvendor quantity. A costed decision per item, not an average — and we backtested it."*
+
+### AI-2 · WHAT IT NEEDS — AND WHY TINA CAN RUN IT  *(flip here for "is it buildable / can she use it?")*
+**Title:** THE DATA + THE STACK
+**On-slide (the 5 tables):** `items` · `sales` (POS export) · **`prep_log` ★** (made / sold / spoiled / sold-out — *the learning loop*) · `calendar` (payday/holiday/weather) · `forecasts` (audit trail).
+**On-slide (feasibility):**
+- **Data needed:** ~**3–4 weeks** to learn the weekly rhythm; **cold-starts from day one** on category priors.
+- **Stack:** Python (pandas · statsmodels · scipy) · SQLite/CSV · **runs on a phone or laptop — no cloud, no GPU.**
+- **Day one:** runs in **Google Sheets** (the [SukiMart_SmartPrep.xlsx](../smartprep/SukiMart_SmartPrep.xlsx) we built). **Production:** POS exports CSV nightly → prep list on her phone each morning.
+- **Cost: ₱0 incremental** (a feature of the POS already in Exhibit D). *System recommends; Tina decides.*
+🎤 **Pocket answer:** *"It needs daily sales plus a 30-second prep log. It runs in a spreadsheet today, on her phone, for zero extra cost."*
+
+### AI-3 · WE BUILT IT AND PROVED IT  *(flip here for "how do you know it works / did you try ML?")*
+**Title:** THE BACKTEST (reproducible)
+**On-slide (headline metrics):** forecast error **WAPE ~19%** · spoilage **16% → 9%** · profit protected **₱24k → ₱47k/yr** · in-stock 71% → 53% (*tunable*).
+**On-slide (the three honesty proofs):**
+- **We tested ML:** avg WAPE — **payday-HW 18% · HW 19% · LightGBM 20% · baseline 21%.** *Gradient boosting didn't beat the simple model at ~120 days; we said so.*
+- **We handle censoring:** sell-outs on **33%** of item-days; naive demand under-counts by **−17%**; **de-censored to ~1%.**
+- **It's a dial, not a fixed point** (profit ↔ availability):
+  | Service floor | In-stock | Spoilage | Profit/yr |
+  |---|---|---|---|
+  | 0.00 (profit-max) | 53% | 9% | ₱24,000 |
+  | 0.70 | 74% | 15% | ₱14,000 |
+  | 0.75 (≈ today) | 79% | 17% | ₱10,000 |
+**Footer:** *Reproduce: `./.venv/bin/python SukiMart/smartprep/run.py` · 18 tests pass · adversarially code-reviewed.*
+🎤 **Pocket answer:** *"Backtested: ~19% error, spoilage nearly halved, ₱24k protected. We tested LightGBM — it lost. We correct for sell-outs. And it's a dial Tina can tune."*
+
+### AI-4 · ONE ENGINE — IT COMPOUNDS  *(flip here for "why only spoilage / what else can AI do?")*
+**Title:** THE SUKISENSE HORIZON — ONE ENGINE, MANY MODULES (maps to the case's Part 6)
+**On-slide (the roadmap table):**
+| Case Part-6 opening | Our extension | Same-engine logic | Status |
+|---|---|---|---|
+| inventory / replenishment (900 SKUs) | **Smart Reorder** | newsvendor reorder-point per SKU | designed · code exists |
+| loyalty / customer (suki + utang) | **Utang Score** | classify by repayment → safe credit line | designed |
+| raise the ₱62 basket toward ₱120 | **Basket Lift** | market-basket cross-sell | designed |
+| staffing / scheduling (Exhibit G hours) | **Shift-to-traffic** | staff the 4–7pm peak, not the lull | designed |
+| go / no-go at a marginal corner | **= our M9 gate** | the same demand model decides the loan | in the plan |
+**On-slide (judgment line):** *Deliberately NOT built: payday **surge-pricing**, camera **surveillance** — they'd cost the suki trust that IS the business.*
+**On-slide (the unifier):** ***"SukiSense — one engine, fed not rebuilt. Earn the store with data; that same data earns the intelligence."***
+**Footer (honesty):** *Only spoilage is built & backtested today; the rest are designed extensions of the same engine.*
+🎤 **Pocket answer:** *"Spoilage is the one with a proven payday today. The same engine extends to reorder, utang, and baskets — exactly the openings the case names — as the data arrives. We didn't sprinkle AI; we built where it pays and showed where it grows."*
+
 ## PITCH DELIVERY NOTES
 - **7:00 total.** Four presenters (P1–P4) hand off at the `║` marks; P1 opens + verdict, P2 the money/illusion, P3 the math/plan, P4 operations/AI.
 - **Two silences that land:** after "₱9,800" (Slide 2) and after "her life savings, gone" (Slide 6).
 - **Mentor lessons applied:** one idea per slide; bold only the hero number; AI is one **built, costed** use today — *architected to compound* (reorder/utang/baskets), never sprinkled; roadmap is sequenced with a gate; numbers all reconcile and are defensible (bring the crashcourse formulas in your pocket).
-- **⚠️ DESIGNER REBUILD NEEDED — the rendered PDF is stale vs this doc:** (1) **Slide 2 / Answer** — Role-of-AI row: new compounding copy + **₱24–47k/yr** (not ₱58–114k) + **₱0 extra** (DELETE "₱3k/mo software" — it contradicts Slide 10). (2) **Slide 10 / Role of AI** — dashboard **₱1,983/mo** (not ₱4,831) + **−44%** (not −50%); new headline; name Holt-Winters; add the HORIZON strip + the "deliberately NOT doing" line. (3) **Slide 14 / Expected Impact** — spoilage **16% → 9%** (not 12% → ~6%). (4) **Appendix** — AI spoilage **16% → 9%** (not 12% → 6%); Smart-Prep is a **Python build** (not "Excel"). (5) Optional: **Roadmap M6–8** add a small "AI extends to reorder/baskets" tag to visualize the compounding.
+- **✅ Main-deck number fixes — DONE (verified in the latest render):** Slide 2 Role-of-AI row (₱24–47k, ₱0 extra, compounding copy); Slide 10 (₱1,983/mo, −44%, Holt-Winters, horizon + "deliberately NOT" bands); Slide 14 (16%→9%); Appendix (16%→9%, Smart-Prep = Python build).
+- **🆕 DESIGNER — SPLIT THE MAIN AI INTO 2 SLIDES:** the old single Role-of-AI slide is now **Slide 9 (method + Morning Dashboard)** and **Slide 10 (proof + horizon)**. This brings the deck to **15 content slides — the cap, exactly** (Money→11, Roadmap→12, Risks→13, Expected Impact→14, Close→15). Re-time the back half per the note on Slide 10 (~+15s on AI; recover it on Money/Expected-Impact).
+- **🆕 DESIGNER — BUILD THE 4 BACKUP SLIDES (AI-1…AI-4 above).** They go in the **appendix (not counted)**, deck's warm theme, denser than main slides. They are **flip-to-in-Q&A** slides — NOT part of the 7-minute flow. Each has a title, on-slide content, and the presenter's pocket answer. Optional polish: Roadmap M6–8 can carry a tiny "AI extends to reorder" tag to foreshadow AI-4.
+- **⚠️ Slide budget:** you are now at **15/15** content slides. No room for another main slide without cutting one. The 4 AI backups stay in the appendix (uncounted).

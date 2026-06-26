@@ -18,9 +18,10 @@ def cmd_forecast(_args):
 
 def cmd_backtest(_args):
     """Load data like run.py, then print just the backtest KPIs (no report written)."""
-    import backtest, run
-    items, series, dows, _tdow = run.load()
-    s = backtest.run(items, series, dows)
+    import backtest, run, forecast
+    items, series, dows, paydays, _tdow, _tpay = run.load()
+    models = {it["sku_id"]: forecast.select_model(series[it["sku_id"]], dows, paydays) for it in items}
+    s = backtest.run(items, series, dows, paydays, models)
     print("BACKTEST (rolling one-step-ahead, gut-feel vs forecast+newsvendor):")
     print(f"  forecast accuracy  : WAPE {s['wape']*100:.0f}%   |   service level {s['service_level']*100:.0f}%")
     print(f"  spoilage           : {s['spoil_gut']*100:.0f}% (gut-feel)  ->  {s['spoil_sys']*100:.0f}% (Smart-Prep)")

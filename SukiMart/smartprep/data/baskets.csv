@@ -1,0 +1,16 @@
+basket_id,items
+1,coffee|pandesal
+2,coffee|pandesal
+3,coffee|pandesal
+4,coffee|pandesal|egg
+5,rice|sardines
+6,rice|sardines
+7,rice|egg
+8,rice|softdrink
+9,sardines|softdrink
+10,siomai|softdrink
+11,siomai|rice
+12,cigarette|load
+13,cigarette|softdrink
+14,load|snack
+15,softdrink|snack

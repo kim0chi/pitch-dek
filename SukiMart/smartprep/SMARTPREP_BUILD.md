@@ -2,13 +2,15 @@
 ### The buildable spec: exact model, exact data, tech stack, and repo plan
 
 > **Audience:** whoever builds it (your team / a dev / Claude). This is the engineering design behind the pitch artifact. Two tiers: **Tier-0** is the spreadsheet Tina actually runs day-one ([SukiMart_SmartPrep.xlsx](SukiMart_SmartPrep.xlsx)); **Tier-1** is the Python engine in this repo that proves, backtests, and improves the model. The pitch shows Tier-0; this doc builds Tier-1.
+>
+> **System framing — SukiSense (*one engine, many modules*):** the engine is **SukiSense**. This doc specs the shared core + the **built** module, **Smart-Prep** (spoilage). Sibling **prototype** modules reuse the same engine: `reorder.py` (Smart Reorder), `utang.py` (Utang Score), `basket.py` (Basket Lift) — run them all via `python sukisense.py`. **Only Smart-Prep is built & backtested today**; the rest switch on as the POS fills with real data.
 
 ---
 
 ## 1 · What it does (scope)
 **Input:** a few weeks of daily ready-to-eat sales. **Output, every morning:** "prepare *this many* of each item today" — the quantity that **maximizes expected profit**, balancing spoilage against lost sales. It also tracks how well it's doing (spoilage %, sell-out %, accuracy) and improves weekly.
 
-**In scope (MVP):** the 5–15 perishable ready-to-eat SKUs (siomai, coffee, rice meals, pandesal, lumpia). **Out of scope (for now):** the 900 grocery SKUs (those use simple reorder points, not forecasting — they don't spoil).
+**In scope (MVP, BUILT):** Smart-Prep over the 5–15 perishable ready-to-eat SKUs (siomai, coffee, rice meals, pandesal, lumpia). **Now also prototyped as sibling modules on the same engine:** the ~900 grocery SKUs → **Smart Reorder** (`reorder.py`, classic (s,S) reorder points — they don't spoil, so newsvendor doesn't apply); the utang ledger → **Utang Score** (`utang.py`); cross-sell → **Basket Lift** (`basket.py`). See `sukisense.py` for the combined status board.
 
 ---
 
