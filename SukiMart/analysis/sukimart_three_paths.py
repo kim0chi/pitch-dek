@@ -78,12 +78,17 @@ print("  econ profit is +2k higher because a FAIR wage is 16k, not 18k).")
 # AI PAYBACK — perishable spoilage forecasting, AT THE RIGHT STORE SIZE
 # =====================================================================
 print("\n"+"="*72)
-print("AI — perishable spoilage forecasting (POS-based; cost ~3k/mo already in opex)")
+print("AI — perishable spoilage forecasting (POS feature; PHP 0 incremental cost)")
+print("  (a) Top-down UPPER BOUND = gross spoiled value removed, as % of perishable REVENUE:")
 for label,sales,pshare in [("Staged store (~320k/mo)",320_000,0.25),
                            ("Full SukiMart (~720k/mo)",720_000,0.22)]:
     perish=sales*pshare
     saved=perish*(0.16-0.09)
-    print(f"  {label:>26}: perishable {php(perish)}/mo  spoilage 16%->9% saves {php(saved)}/mo = {php(saved*12)}/yr")
+    print(f"      {label:>26}: perishable {php(perish)}/mo  16%->9% gross ~{php(saved)}/mo = ~{php(saved*12)}/yr")
+print("  (b) WE CITE the BACKTESTED, NET figure (smartprep/run.py) — conservative & defensible:")
+print("      Staged ~PHP 1,983/mo = ~PHP 24,000/yr   |   Full SukiMart ~PHP 47,000/yr")
+print("      Lower than (a) because it is NET of the sales given up by prepping leaner, and")
+print("      spoilage is valued at COST not revenue. We pitch the smaller, proven number.")
 
 # =====================================================================
 # THE HONEST TRADE-OFF
